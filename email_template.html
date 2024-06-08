@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #26a69a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header img {
+            max-width: 100px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h1 {
+            color: #333;
+        }
+        .content p {
+            color: #666;
+        }
+        .content ul {
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin-bottom: 10px; /* Add spacing between list items */
+            line-height: 1.6;   /* Adjust line height for better readability */
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            color: #ffffff;
+            background-color: #26a69a;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #e0f7fa;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>DENTTREE DENTAL</h1>
+            <p>"We are the makers smile amazing"</p>
+        </div>
+        <div class="content">
+            <h1>Welcome to Our Service!</h1>
+            <p>Hi {{FirstName}},</p>
+            <p>We are excited to have you join us. At Denttree Dental Lab, we are dedicated to providing the best service to our valued customers.</p>
+            <p>Here are some features you'll love:</p>
+            <ul>
+                <li>German Quality Dentures: Experience top-notch craftsmanship with our complimentary test case.</li>
+                <li>Rapid Delivery: Receive your digital dentures within just 4 days.</li>
+                <li>Customer Service: Our dedicated team is available 7 days a week to assist you.</li>
+            </ul>
+            <p>Ready to get started? Click the button below to activate your account and start exploring all the benefits we offer.</p>
+            <a href="https://yourcompany.com/activate" class="btn">Activate Now</a>
+        </div>
+        <div class="footer">
+            <p>If you have any questions, feel free to <a href="mailto:support@yourcompany.com">contact us</a> at any time.</p>
+            <p>&copy; 2024 Denttree Dental Lab. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
