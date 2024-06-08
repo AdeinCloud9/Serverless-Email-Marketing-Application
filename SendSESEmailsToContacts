@@ -40,3 +40,38 @@ def lambda_handler(event, context):
             print(f"Email sent to {contact['Email']}: Response {response}")
     except Exception as e:
         print(f"An error occurred: {e}")
+
+
+Lambda Function Test Event
+
+{
+  "comment": "Generic test event for scheduled Lambda execution. The function does not use this event data.",
+  "test": true
+}
+
+
+
+IAM Policy for SES and S3 permissions
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::denttree-email-marketing/*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ses:SendEmail",
+                "ses:SendRawEmail"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+
